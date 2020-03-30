@@ -1,0 +1,17 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+}
+.viewport {
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  background: #fafafa;
+  color: #222831;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+}

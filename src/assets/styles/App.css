@@ -2,11 +2,11 @@
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
 }
-.viewport {
+body {
   display: flex;
   flex-direction: column;
-  box-sizing: content-box;
   background: #fafafa;
+  box-sizing: content-box;
   color: #222831;
 }
 h1 {
@@ -14,4 +14,133 @@ h1 {
   font-weight: 600;
   letter-spacing: 2px;
   text-align: center;
+}
+.about .social p {
+  font-weight: 400;
+  font-size: 2em;
+  letter-spacing: 2px;
+  color: rgb(142, 142, 147);
+}
+hr {
+  height: 1px;
+  width: 500px;
+  background-color: rgb(230, 230, 230);
+  border: none;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+.optional-button {
+  font-size: 20px;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  background: white;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  justify-content: center;
+}
+.optional-button:hover {
+  text-decoration: none;
+}
+@keyframes wave-animation {
+  0% { transform: rotate(  0.0deg); }
+  10% { transform: rotate(-10.0deg); }
+  20% { transform: rotate( 12.0deg); }
+  30% { transform: rotate(-10.0deg); }
+  40% { transform: rotate(  9.0deg); }
+  50% { transform: rotate(  0.0deg); }
+  100% { transform: rotate(  0.0deg); }
+}
+.optional-button:hover > span {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+.home-handwritten{
+  font-family: 'Reenie Beanie', cursive;
+}
+.home {
+  display: flex;
+  height: 100vh;
+}
+p.text-block {
+  letter-spacing: 1px;
+  font-size: 1.25em;
+  color: #393f4d;
+  text-align: center;
+}
+.text-block > a {
+  letter-spacing: 1px !important;
+  color: #393f4d !important;
+  text-transform: unset !important;
+}
+a {
+  color: #393f4d;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+}
+.home {
+  width: 500px;
+}
+.home,
+.about,
+.social {
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+  box-sizing: content-box;
+}
+.home_body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.about_body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.portfolio{
+  display: flex;
+  justify-content: center;
+}
+.social {
+  display: flex;
+  height: 100vh;
+}
+.social_body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.social_body_items{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.social_body_email{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

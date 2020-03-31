@@ -15,6 +15,10 @@ h1 {
   letter-spacing: 2px;
   text-align: center;
 }
+.home_body h1{
+  margin: 0;
+  font-size: 4em;
+}
 .about .social p {
   font-weight: 400;
   font-size: 2em;
@@ -59,7 +63,7 @@ hr {
   50% { transform: rotate(  0.0deg); }
   100% { transform: rotate(  0.0deg); }
 }
-.optional-button:hover > span {
+.optional-button:hover span {
   animation-name: wave-animation;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
@@ -67,6 +71,8 @@ hr {
   display: inline-block;
 }
 .home-handwritten{
+  margin-top: 10px;
+  font-size: 3.5em;
   font-family: 'Reenie Beanie', cursive;
 }
 .home {
@@ -111,6 +117,11 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
+  align-items: center;
+  margin: auto;
+}
+.home_body img {
+  margin-top: 20px;
 }
 .about_body {
   width: 100%;
@@ -118,10 +129,12 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
+  margin: auto;
 }
-.portfolio{
-  display: flex;
-  justify-content: center;
+.about_body a{
+  margin: auto;
+  width: 125px;
+  height: 100px;
 }
 .social {
   display: flex;
@@ -133,6 +146,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
+  margin: auto;
 }
 .social_body_items{
   display: flex;

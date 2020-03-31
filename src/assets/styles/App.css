@@ -27,11 +27,11 @@ h1 {
 }
 hr {
   height: 1px;
-  width: 500px;
   background-color: rgb(230, 230, 230);
   border: none;
-  margin-top: 7%;
-  margin-bottom: 7%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 600px;
 }
 .optional-button {
   font-size: 20px;
@@ -79,16 +79,11 @@ hr {
   display: flex;
   height: 100vh;
 }
-p.text-block {
+.text-block {
   letter-spacing: 1px;
   font-size: 1.25em;
   color: #393f4d;
   text-align: center;
-}
-.text-block > a {
-  letter-spacing: 1px !important;
-  color: #393f4d !important;
-  text-transform: unset !important;
 }
 a {
   color: #393f4d;
@@ -99,17 +94,16 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.home {
-  width: 500px;
-}
-.home,
-.about,
+.home
+.about
 .social {
   max-width: 1000px;
   margin: auto;
   padding-left: 10% !important;
   padding-right: 10% !important;
   box-sizing: content-box;
+  display: flex;
+  height: 100vh;
 }
 .home_body {
   width: 100%;
@@ -131,10 +125,21 @@ a:hover {
   box-sizing: border-box;
   margin: auto;
 }
+.about_body h1{
+  margin-top: 0;
+  margin-bottom: 5%;
+}
 .about_body a{
   margin: auto;
   width: 125px;
   height: 100px;
+}
+.text-body {
+  letter-spacing: 1px;
+  font-size: 1.25em;
+  color: #393f4d;
+  text-align: center;
+  margin: 10px;
 }
 .social {
   display: flex;
@@ -147,14 +152,25 @@ a:hover {
   justify-content: center;
   box-sizing: border-box;
   margin: auto;
+  align-items: center;
 }
 .social_body_items{
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  height: 35px;
+  width: 100%;
+  max-width: 1000px;
   justify-content: space-evenly;
 }
 .social_body_email{
   display: flex;
-  align-items: center;
   justify-content: center;
+}
+.social_body_email a{
+  font-size: larger;
+}
+.social h1 {
+  margin: 0;
 }

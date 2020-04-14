@@ -1,0 +1,22 @@
+{
+  "name": "my-website",
+  "version": "1.0.0",
+  "description": "A personal project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ocandoja/ocandoja.github.io.git"
+  },
+  "keywords": [
+    "spa"
+  ],
+  "author": "José Ocando <jaogocando@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ocandoja/ocandoja.github.io/issues"
+  },
+  "homepage": "https://github.com/ocandoja/ocandoja.github.io#readme"
+}
